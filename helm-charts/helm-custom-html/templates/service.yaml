@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "helm-custom-html.fullname" . }}
+  labels:
+    {{- include "helm-custom-html.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+      {{ if and (eq .Values.nodePort true) (contains "NodePort" .Values.service.type )}}nodePort: {{ .Values.nodePort }} {{ end }}
+  selector:
+    {{- include "helm-custom-html.selectorLabels" . | nindent 4 }}
+

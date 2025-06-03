@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  helm-custom-html:
+  - apiVersion: v2
+    appVersion: 1.16.1
+    created: "2025-06-03T11:26:40.789316+10:00"
+    description: A Helm chart for Kubernetes
+    digest: b120e9e503b0e099bee4df991d28edf9d86ad31e207c8a9461c36ba27d42fbc3
+    name: helm-custom-html
+    type: application
+    urls:
+    - https://github.com/FinnianDempsey/helm-repo/helm-custom-html-0.1.1.tgz
+    version: 0.1.1
+generated: "2025-06-03T11:26:40.787791+10:00"
