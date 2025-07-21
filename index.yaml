@@ -9,6 +9,6 @@ entries:
     name: helm-custom-html
     type: application
     urls:
-    - https://raw.githubusercontent.com/FinnianDempsey/helm-repo/main/helm-custom-html-0.1.1.tgz
+    - https://github.com/FinnianDempsey/helm-repo/helm-custom-html-0.1.1.tgz
     version: 0.1.1
 generated: "2025-06-03T11:26:40.787791+10:00"
